@@ -5,14 +5,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.0.5</version>
+        <version>4.0.6</version>
         <relativePath/>
     </parent>
     <groupId>br.edu.atitus</groupId>
-    <artifactId>greeting-service</artifactId>
+    <artifactId>discovery-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>greeting-service</name>
-    <description>greeting-service</description>
+    <name>discovery-service</name>
+    <description>discovery-service</description>
     <properties>
         <java.version>25</java.version>
         <spring-cloud.version>2025.1.1</spring-cloud.version>
@@ -20,15 +20,11 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
